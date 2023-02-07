@@ -1,67 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="@color/white"
+    android:background="@color/white"
     tools:context=".SignUp2">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:text="Sign Up"
+        android:layout_marginTop="8dp"
+        android:text="Smart Water"
         android:textAlignment="center"
-        android:textColor="#0077b6"
+        android:textColor="@color/blue"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="413dp"
-        android:layout_height="575dp"
-        android:layout_marginTop="28dp"
-        android:background="#0077b6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="349dp"
-        android:layout_height="66dp"
-        android:background="@drawable/shape"
-        android:backgroundTint="@color/white"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="357dp" />
-
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="355dp"
-        android:layout_height="70dp"
-        android:background="@drawable/shape"
-        android:backgroundTint="@color/white"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="234dp" />
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/textview2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#1F3D0C"
-        android:text="Next"
-        android:textColor="@color/white"
+        android:layout_below="@+id/textview"
+        android:layout_marginTop="124dp"
+        android:text="OTP Verification"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
         android:textSize="30dp"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="670dp" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview" />
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview2"
+        android:layout_marginTop="8dp"
+        android:text="@string/details"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textview2"
+        app:layout_constraintTop_toBottomOf="@+id/textview2" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/pin_view"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/textview3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:elevation="10dp"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:itemHeight="60dp"
+        android:itemBackground="@color/gray"
+        app:itemRadius="10dp"
+        app:itemSpacing="15dp"
+        app:itemWidth="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview3"
+        app:viewType="rectangle">
+
+    </com.chaos.view.PinView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pin_view"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/pin_view"
+        app:layout_constraintStart_toStartOf="@+id/pin_view"
+        app:layout_constraintTop_toBottomOf="@+id/pin_view">
+
+        <TextView
+            android:id="@+id/resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn't receive the OPT?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/resend2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/resend"
+            android:text="resend"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/proceedBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/shape_btn"
+        android:backgroundTint="@color/blue"
+        android:text="Proceed"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+    </androidx.appcompat.widget.AppCompatButton>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

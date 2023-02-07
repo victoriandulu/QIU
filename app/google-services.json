@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "52422573913",
+    "project_id": "qius-899cf",
+    "storage_bucket": "qius-899cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52422573913:android:a902eb436a40e3d0ad5648",
+        "android_client_info": {
+          "package_name": "com.example.qiu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52422573913-l379vapc2mi1d3tbpddlbbqtn453f99n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.qiu",
+            "certificate_hash": "bf99a67d126bf4ac776644fd4d59f28501c229d4"
+          }
+        },
+        {
+          "client_id": "52422573913-mvohfr9g0m1tp9gtbgd489ch82q8hms9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT1MNdQs7IiQpVsk1R3aiGI2qeK5xBqjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52422573913-mvohfr9g0m1tp9gtbgd489ch82q8hms9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

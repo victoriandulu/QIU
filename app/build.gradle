@@ -42,5 +42,8 @@ dependencies {
     implementation "com.airbnb.android:lottie:5.2.0"
     //circle
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+//    charts
+    implementation 'com.github.PhilJay:MPAdroidChart:v3.1.0'
+    
 
 }
